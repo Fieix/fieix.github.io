@@ -369,4 +369,31 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Устанавливаем начальный текст кнопки
-themeToggle.textContent = 'Persona Theme'; 
+themeToggle.textContent = 'Persona Theme';
+
+// Обработчик клика для всех вращающихся картинок
+const floatingImages = document.querySelectorAll('.floating-image');
+floatingImages.forEach(image => {
+    image.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'persona5') {
+            window.location.href = 'https://fieix.github.io/Morgana.github.io/'; // Замените на ваш URL
+        }
+    });
+});
+
+// Обработчик клика для вращающейся картинки
+const rotatingImage = document.querySelector('.rotating-image');
+if (rotatingImage) {
+    console.log('Rotating image found.');
+    rotatingImage.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        console.log('Current theme:', currentTheme);
+        if (currentTheme === 'persona5') {
+            console.log('Redirecting to site.');
+            window.location.href = 'https://fieix.github.io/Morgana.github.io/'; // Замените на ваш URL
+        }
+    });
+} else {
+    console.log('Rotating image not found.');
+} 
