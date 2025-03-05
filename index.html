@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональное био</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Snowburst+One&family=Bebas+Neue&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-transition"></div>
+    <button class="theme-toggle">Change Theme</button>
+    <div class="floating-images">
+        <img src="./200px-Th14Cirno.png" alt="Floating Image" class="floating-image" draggable="true">
+        <img src="./200px-Th14Cirno.png" alt="Floating Image" class="floating-image" draggable="true">
+        <img src="./200px-Th14Cirno.png" alt="Floating Image" class="floating-image" draggable="true">
+        <img src="./200px-Th14Cirno.png" alt="Floating Image" class="floating-image" draggable="true">
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img src="avatar.jpg" alt="Fieix Avatar" class="avatar">
+                    </div>
+                    <h1>Fieix</h1>
+                </div>
+                <div class="bio">
+                    Меня зовут Fieix. Я фотограф, программист и клиннер. В настоящее время учусь и развиваюсь в нескольких направлениях. У меня есть небольшой опыт в клиннинге манги, а в свободное время я увлекаюсь фотографией и играми. Считаю своей сильной стороной сообразительность, которая помогает мне быстро адаптироваться и находить нестандартные решения. Одна из моих главных целей — переехать в другую страну и продолжать расти как профессионал.
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.roblox.com/users/1271854394/profile" class="social-link"><i class="fas fa-gamepad"></i></a>
+                    <a href="#" class="social-link" data-tooltip="Fieix"><i class="fab fa-discord"></i></a>
+                    <a href="https://discord.gg/KKdyS6nVkb" class="social-link"><i class="fas fa-server"></i></a>
+                    <a href="https://open.spotify.com/user/31ftqp5vn3a5bczdtofb5ee4j6ce?si=2f5c03f086ea4605" class="social-link"><i class="fab fa-spotify"></i></a>
+                    <a href="https://steamcommunity.com/id/Fieix/" class="social-link"><i class="fab fa-steam"></i></a>
+                    <a href="https://drive.google.com/drive/folders/1qqFK_oGRCuGFaGGdv-n1v9HKQtVIJ56i?usp=sharing" class="social-link" data-tooltip="Клин"><i class="fab fa-google-drive"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fieix. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <div class="music-player">
+        <button id="musicToggle" class="music-toggle">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="volume-control">
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="20" step="1">
+        </div>
+        <audio id="bgMusic" preload="auto" loop>
+            <source src="./background-music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html> 
